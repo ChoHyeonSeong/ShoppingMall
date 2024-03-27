@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+a {
+	text-decoration: none;
+	font-size: 15px;
+}
+
+body {
+	background: #1f253d;
+	width: 950px;
+	height: 1725px;
+	margin: 6em auto;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+	margin-bottom: 25px;
+	background: #394264;
+	border-radius: 5px;
+	height: 80px;
+}
+
+.header-menu {
+	display: flex;
+	justify-content: space-around;
+	padding: 0 20px;
+	width: 800px;
+}
+
+.cart-menu {
+	padding: 0 20px;
+}

@@ -268,7 +268,7 @@ input[type=text]:focus {
 	margin: 6em auto;
 }
 /*********************************************** HEADER ***********************************************/
-header {
+/* header {
 	height: 80px;
 }
 
@@ -281,7 +281,7 @@ header {
 .header-menu li {
 	position: relative;
 	-webkit-transform: translateZ(0);
-	/** To avoid a flash when hover messages **/
+	* To avoid a flash when hover messages *
 }
 
 .header-menu-tab {
@@ -299,10 +299,10 @@ header {
 	text-decoration: none;
 }
 
-/* .header-menu-tab .icon {
+.header-menu-tab .icon {
 	padding-right: 15px;
-} */
-/* 
+}
+
 .header-menu-number {
 	position: absolute;
 	line-height: 22px;
@@ -314,7 +314,7 @@ header {
 	right: 2px;
 	-webkit-transition: all .3s linear;
 	transition: all .3s linear;
-} */
+}
 .header-menu li:hover .header-menu-number {
 	text-decoration: none;
 	-webkit-transform: rotate(360deg);
@@ -322,14 +322,12 @@ header {
 }
 
 .profile-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 	height: 80px;
+	width: 50px;
 	padding: 0 20px;
 }
 
-/** CONTAINERS **/
+* CONTAINERS *
 .container {
 	float: left;
 	width: 300px;
@@ -340,7 +338,7 @@ header {
 	background: #394264;
 	border-radius: 5px;
 }
-/******************************************** LEFT CONTAINER *****************************************/
+******************************************* LEFT CONTAINER ****************************************
 .left-container {
 	
 }
@@ -412,9 +410,9 @@ header {
 .donut-chart {
 	height: 270px;
 }
-/******************************************
+*****************************************
 				DONUT-CHART by @kseso https://codepen.io/Kseso/pen/phiyL
-				******************************************/
+				*****************************************
 .donut-chart {
 	position: relative;
 	width: 200px;
@@ -505,9 +503,9 @@ p.center-date {
 	-webkit-transform: rotate(32deg);
 	transform: rotate(32deg);
 }
-/******************************************
+*****************************************
 				END DONUT-CHART by @kseso https://codepen.io/Kseso/pen/phiyL
-				******************************************/
+				*****************************************
 .os-percentages {
 	padding-top: 36px;
 }
@@ -555,9 +553,9 @@ p.center-date {
 	height: 200px;
 	background: #11a8ab;
 }
-/******************************************
+*****************************************
 				LINE-CHART by @kseso https://codepen.io/Kseso/pen/phiyL
-				******************************************/
+				*****************************************
 .grafico {
 	padding: 2rem 1rem 1rem;
 	width: 100%;
@@ -682,9 +680,9 @@ p.center-date {
 	float: left;
 	text-align: center;
 }
-/******************************************
+*****************************************
 				END LINE-CHART by @kseso https://codepen.io/Kseso/pen/phiyL
-				******************************************/
+				*****************************************
 .time-lenght {
 	padding-top: 22px;
 	padding-left: 38px;
@@ -847,7 +845,7 @@ p.center-date {
 	background: #363f61;
 	border-bottom-right-radius: 5px;
 }
-/************************************************** MIDDLE CONTAINER **********************************/
+************************************************* MIDDLE CONTAINER *********************************
 .middle-container {
 	margin: 0 25px;
 }
@@ -1128,7 +1126,7 @@ p.center-date {
 .middle-container .social .icon.googleplus {
 	background: #cc324b;
 }
-/********************************************* RIGHT CONTAINER ****************************************/
+******************************************** RIGHT CONTAINER ***************************************
 .right-container {
 	
 }
@@ -1232,20 +1230,20 @@ p.center-date {
 
 .progress-bar.downloading {
 	background: -webkit-linear-gradient(left, #11a8ab 81%, #50597b 81%);
-	/* Chrome10+,Safari5.1+ */
+	Chrome10+,Safari5.1+
 	background: -ms-linear-gradient(left, #11a8ab 81%, #50597b 81%);
-	/* IE10+ */
+	IE10+
 	background: linear-gradient(to right, #11a8ab 81%, #50597b 81%);
-	/* W3C */
+	W3C
 }
 
 .progress-bar.uploading {
 	background: -webkit-linear-gradient(left, #4fc4f6 43%, #50597b 43%);
-	/* Chrome10+,Safari5.1+ */
+	Chrome10+,Safari5.1+
 	background: -ms-linear-gradient(left, #4fc4f6 43%, #50597b 43%);
-	/* IE10+ */
+	IE10+
 	background: linear-gradient(to right, #4fc4f6 43%, #50597b 43%);
-	/* W3C */
+	W3C
 }
 
 .calendar-day {
@@ -1311,4 +1309,4 @@ p.center-date {
 	line-height: 34px;
 	background: #e64c65;
 	border-radius: 100%;
-}
+} */
