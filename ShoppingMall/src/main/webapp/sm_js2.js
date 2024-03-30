@@ -2,23 +2,25 @@
  * 
  */
 
-let parent = $('main');
-let child = $('<div', {
-	class: 'prod-box radius-box'
-});
 
-function createProduct(src, title, writer, summary) {
-	let product;
-	return product;
+function changeContent(box,src,title,writer){
+	box.find('img').attr('src',src);
+	box.find('.fiction-title').text(title);
+	box.find('.fiction-writer').text(writer);
 }
 
-$(document).ready(() => {
-
-	/*	$(".gardenimg").on("mouseenter", function() {
-			let rand = parseInt(Math.random() * 500);
-			$(this).append("<p>방문자수:" + rand + "</p>");
-		});
-		$(".gardenimg").on("mouseleave", function() {
-			$(this).children().last().remove();
-		});*/
-});
+function addProduction(prods){
+	if(prods.length > 0){
+		if(prods[0].length > 0 && prods[0].length < 4){
+			let prodBox = $('.prod-box');
+			let prod = prods[0];
+			changeContent(prodBox,prod[0],prod[1],prod[2]);
+			for(let i=1;i<prods.length;i++){
+				prod = prods[i];
+				let box = prodBox.clone();
+				changeContent(box,prod[0],prod[1],prod[2]);
+				$('main').append(box);
+			}
+		}
+	}
+}

@@ -64,7 +64,7 @@ main {
 
 .prod-box {
 	display: flex;
-	flex-direction:column;
+	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	background: #394264;
@@ -95,4 +95,9 @@ main {
 
 .summary-btn-span, .pick-btn-span {
 	color: black;
+}
+
+.prod-box-img img{
+	width: 173px;
+	height: 245px;
 }

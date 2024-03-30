@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="./sm_css2.css?after">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script type="text/javascript" src="./sm_js2.js"></script>
+<script type="text/javascript">
+
+$(document).ready(() => {
+	$('header').load('header.html');
+	$('main').load('main.html',function(){
+		let prods = [["./img/11.jpg","대체불가","조연진"],["./img/12.jpg","달콤 끈적한 계약관계","송채희"],["./img/13.jpg","함박꽃식당"]];
+		addProduction(prods);
+	});
+});
+
+</script>
+</head>
+<body>
+	<header class="radius-box"> </header>
+	<main></main>
+</body>
+</html>
