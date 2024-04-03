@@ -36,15 +36,15 @@ header {
 	height: 80px;
 }
 
-
-.header-menu {
+/* 
+.main-nav-list {
 	display: flex;
 	justify-content: space-around;
 	padding: 0 20px;
 	width: 800px;
 }
 
-.header-menu-tab {
+.main-nav-item {
 	display: block;
 	width: 125px;
 	height: 80px;
@@ -110,4 +110,4 @@ main {
 .fiction-writer{
 	color: white;
 	text-align: center;
-}
+} */
