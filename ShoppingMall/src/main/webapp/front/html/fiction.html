@@ -10,17 +10,25 @@
 <script type="text/javascript">
 
 $(document).ready(() => {
+/* 	get과 load의 차이
+	html을 불러와서 header태그에 삽입하고싶엇는데
+	load함수로는 기존 것이 초기화되고 삽입되서
+	sub_nav 넣기가 안됐는데
+	get으로는 가능해짐
+	https://juyoungit.tistory.com/603 */
 	$.get("main_nav.html",function(data){
 
 		$('header').append(data);
 	});	
+	$.get("sub_nav.html",function(data){
+
+		$('header').append(data);
+	});
 });
 
 </script>
 </head>
 <body>
-<!-- 웹페이지 구조 참고
-http://hyunsik.me/wordpress/?p=2151 -->
 	<header class="radius-box"> </header>
 	<main></main>
 </body>
