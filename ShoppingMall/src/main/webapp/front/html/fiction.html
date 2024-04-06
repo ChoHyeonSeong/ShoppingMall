@@ -19,10 +19,12 @@ $(document).ready(() => {
 	$.get("main_nav.html",function(data){
 
 		$('header').append(data);
+		$('#fiction-page').css("background-color","#396496");
 	});	
 	$.get("sub_nav.html",function(data){
 
 		$('header').append(data);
+		$('.sub-nav-list').load('fiction_nav.html');
 	});
 });
 
