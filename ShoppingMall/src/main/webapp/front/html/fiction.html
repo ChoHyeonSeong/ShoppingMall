@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" type="text/css" href="../css/sm_fiction_css.css?after">
+<link rel="stylesheet" type="text/css"
+	href="../css/sm_fiction_css.css?after">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 <script type="text/javascript" src="../js/sm_fiction_js.js"></script>
@@ -20,11 +21,14 @@ $(document).ready(() => {
 
 		$('header').append(data);
 		$('#fiction-page').css("background-color","#396496");
+		$('#fiction-page a').css("color","white");
 	});	
 	$.get("sub_nav.html",function(data){
 
 		$('header').append(data);
-		$('.sub-nav-list').load('fiction_nav.html');
+		$('.sub-nav-list').load('fiction_nav.html',function(){
+			$('#romance-tab').css("background","#396496");
+		});
 	});
 });
 
