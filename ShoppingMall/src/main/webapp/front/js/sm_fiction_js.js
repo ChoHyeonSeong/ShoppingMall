@@ -2,7 +2,6 @@
  * 
  */
 
-let imgPath = '../../img/';
 
 function changeContent(box, src, title, writer) {
 	box.find('img').attr('src', src);
@@ -15,17 +14,22 @@ function addProduction(prods) {
 		// img 주소, 제목, 작가 총 3개 요소
 		if (prods[0].length > 0 && prods[0].length < 4) {
 
-			$.get("../html/production.html", function(data) {
-				let prodBox = $(data);
+			$.get("production.html", function(data) {
+				let prodBox = $('.prod-box');
 				let prod = prods[0];
 				changeContent(prodBox, prod[0], prod[1], prod[2]);
-				for (let i = 0; i < prods.length; i++) {
+				for (let i = 1; i < prods.length; i++) {
 					prod = prods[i];
 					let box = prodBox.clone();
-					changeContent(box, imgPath + prod[0], prod[1], prod[2]);
+					changeContent(box, prod[0], prod[1], prod[2]);
 					$('main').append(box);
 				}
 			});
 		}
 	}
+}
+
+
+function addGenre(genre,) {
+
 }

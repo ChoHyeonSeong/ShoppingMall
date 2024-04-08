@@ -112,7 +112,11 @@ header {
 	font-size: 17px;
 }
 
+/* 
 
+.cart-menu {
+	padding: 0 20px;
+}
 
 main {
 	display: flex;
@@ -167,4 +171,4 @@ main {
 .fiction-writer{
 	color: white;
 	text-align: center;
-} 
+} */
