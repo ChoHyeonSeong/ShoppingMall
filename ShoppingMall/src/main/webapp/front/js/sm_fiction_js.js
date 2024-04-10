@@ -19,7 +19,6 @@ function addProduction(prods) {
 			$.get(productionPath, function(data) {
 				let prodBox = $(data);
 				let prod = prods[0];
-				changeContent(prodBox, prod[0], prod[1], prod[2]);
 				for (let i = 0; i < prods.length; i++) {
 					prod = prods[i];
 					let box = prodBox.clone();

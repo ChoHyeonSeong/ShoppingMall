@@ -16,7 +16,7 @@ $(document).ready(() => {
 	let prods3 = [["31.jpg","선조의 머릿속이 꽃밭이다","드림판다"],["32.jpg","카이저를 구했다","제니비"],["33.jpg","청동기 시대의 풍백이 되었다","멍애츼"]];
 	let prods4 = [["41.jpg","밥 먹고가라","고두열"],["42.jpg","구해줘","김주희"],["43.jpg","축구천재로 오해받는 중입니다","한명현"]];
 	let prods5 = [["51.jpg","화산귀환","비가"],["52.jpg","괴력난신","한중월야"],["53.jpg","절대회귀","장영훈"]];
-	let prods6 = [[".61.jpg","오아뉴 멱살 한번 잡힙시다","뉴럭이"],["62.jpg","복수 법률사무소","도진기"],["63.jpg","동트는 새벽의 끝","autholeety"]];
+	let prods6 = [["61.jpg","오아뉴 멱살 한번 잡힙시다","뉴럭이"],["62.jpg","복수 법률사무소","도진기"],["63.jpg","동트는 새벽의 끝","autholeety"]];
 /* 	get과 load의 차이
 	html을 불러와서 header태그에 삽입하고싶엇는데
 	load함수로는 기존 것이 초기화되고 삽입되서
@@ -32,12 +32,29 @@ $(document).ready(() => {
 	$.get("sub_nav.html",function(data){
 
 		$('header').append(data);
+		addProduction(prods1);
 		$('.sub-nav-list').load('fiction_nav.html',function(){
 			$('#romance-tab').css("background","#396496");
+			addClickLink('#romance-tab',prods1);
+			addClickLink('#romance-fantasy-tab',prods2);
+			addClickLink('#fantasy-tab',prods3);
+			addClickLink('#modern-romance-tab',prods4);
+			addClickLink('#martial-arts-tab',prods5);
+			addClickLink('#etc-tab',prods6);
 		});
 	});
-	addProduction(prods1);
 });
+
+function addClickLink(tag, prods){
+	let box = $(tag);
+	let link = $(tag+' a');
+	link.on("click",function(){
+		$('main').empty();
+		addProduction(prods);
+		$('.sub-nav-item').css("background","gray");
+		box.css("background","#396496");
+	});
+}
 
 </script>
 </head>
