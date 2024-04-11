@@ -32,7 +32,6 @@ $(document).ready(() => {
 	$.get("sub_nav.html",function(data){
 
 		$('header').append(data);
-		addProduction(prods1);
 		$('.sub-nav-list').load('fiction_nav.html',function(){
 			$('#romance-tab').css("background","#396496");
 			addClickLink('#romance-tab',prods1);
@@ -43,6 +42,7 @@ $(document).ready(() => {
 			addClickLink('#etc-tab',prods6);
 		});
 	});
+	addProduction(prods1);
 });
 
 function addClickLink(tag, prods){
