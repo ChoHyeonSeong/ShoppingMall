@@ -123,8 +123,6 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	align-items: center;
-	background: #394264;
 	height: 360px;
 	width: 300px;
 	margin-bottom: 20px;
@@ -135,7 +133,6 @@ main {
 	align-self: flex-end;
 	justify-content: space-between;
 	width: 300px;
-	justify-content: space-between;
 }
 
 .prod-btn {
@@ -147,6 +144,17 @@ main {
 	background-color: white;
 	text-align: center;
 }
+.summary-btn-box{
+	background: #EAEAEA;
+	border: 1px solid #BDBDBD;
+	border-radius: 5%;
+}
+.pick-btn-box{
+	background: #396496;
+	border: 1px solid #225796;
+	color: white;
+	border-radius: 2%;
+}
 
 .summary-btn-a, .pick-btn-a {
 	width: 150px;
@@ -154,16 +162,24 @@ main {
 }
 
 .summary-btn-span, .pick-btn-span {
-	color: black;
+	font-size: 13pt;
+	font-weight: bold;
 	line-height: 50px;
+}
+.pick-btn-span{
+	color: white;
 }
 
 .prod-box-img img{
-	width: 173px;
-	height: 245px;
+	border-radius: 2%;
+	width: 100%;
+	height: 425px;
+}
+.prod-box-text{
+	margin: 5px 0;
 }
 
-.fiction-writer{
-	color: white;
-	text-align: center;
-} 
+.fiction-title{
+	font-size: 15pt;
+	font-weight: bold;
+}
