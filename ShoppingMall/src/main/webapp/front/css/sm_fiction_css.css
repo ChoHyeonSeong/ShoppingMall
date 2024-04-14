@@ -83,12 +83,15 @@ header {
 	align-items: center;
 }
 
-.main-nav-cart-btn {
+.cart-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	border: none;
 	width: 60px;
 	height: 60px;
 	border-radius: 50%;
-	background-color: #1f253d;
+	background-color: #396496;
 }
 
 .sub-nav-list {
