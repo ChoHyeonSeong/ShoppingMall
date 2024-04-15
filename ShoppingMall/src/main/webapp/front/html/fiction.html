@@ -23,13 +23,27 @@ $(document).ready(() => {
 	sub_nav 넣기가 안됐는데
 	get으로는 가능해짐
 	https://juyoungit.tistory.com/603 */
+	
+	/*
+	장바구니 기능 - 로컬 스토리지
+	local storage
+	https://kdabina.tistory.com/133
+	*/
+	
+	let prods1Item = new Array(prods1.length);
+	let prods2Item = new Array(prods2.length);
+	let prods3Item = new Array(prods3.length);
+	let prods4Item = new Array(prods4.length);
+	let prods5Item = new Array(prods5.length);
+	let prods6Item = new Array(prods6.length);
+	
 	$.get("main_nav.html",function(data){
 
 		$('header').append(data);
 		$('#fiction-page').css("background-color","#396496");
 		$('#fiction-page a').css("color","white");
-		$('.main-nav-cart-btn').on('click',function(){
-			
+		$('.cart-icon-area').on('click',function(){
+			location.href="./cart.html";
 		});
 	});	
 	$.get("sub_nav.html",function(data){

@@ -83,7 +83,7 @@ header {
 	align-items: center;
 }
 
-.cart-icon {
+.cart-icon-area {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -92,6 +92,7 @@ header {
 	height: 60px;
 	border-radius: 50%;
 	background-color: #396496;
+	cursor: pointer;
 }
 
 .sub-nav-list {
