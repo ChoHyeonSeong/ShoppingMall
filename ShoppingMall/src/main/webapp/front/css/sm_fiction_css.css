@@ -158,6 +158,7 @@ main {
 	border: 1px solid #225796;
 	color: white;
 	border-radius: 2%;
+	cursor: pointer;
 }
 
 .summary-btn-a, .pick-btn-a {

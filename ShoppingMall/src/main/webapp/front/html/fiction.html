@@ -45,7 +45,7 @@ $(document).ready(() => {
 		$('.cart-icon-area').on('click',function(){
 			location.href="./cart.html";
 		});
-	});	
+	});
 	$.get("sub_nav.html",function(data){
 
 		$('header').append(data);
@@ -60,7 +60,42 @@ $(document).ready(() => {
 		});
 	});
 	addProduction(prods1);
+	
 });
+
+function addProduction(prods) {
+	if (prods.length > 0) {
+		// img 주소, 제목, 작가 총 3개 요소
+		if (prods[0].length > 0 && prods[0].length < 4) {
+
+			$.get(productionPath, function(data) {
+				let prodBox = $(data);
+				let prod = prods[0];
+				for (let i = 0; i < prods.length; i++) {
+					prod = prods[i];
+					let box = prodBox.clone();
+					changeContent(box, imgPath + prod[0], prod[1], prod[2]);
+					
+					$('main').append(box);
+				}
+				$('.pick-btn-box').on('click',function(){
+					//alert($(this).attr("aria-checked"));
+					if($(this).attr("aria-checked") == "true"){
+						$(this).attr("aria-checked","false");
+						$(this).css("background-color","#396496");
+						$(this).children('.pick-btn-span').css("color","white");
+						$(this).children('.pick-btn-span').text("장바구니 담기");
+					} else{
+						$(this).attr("aria-checked","true");
+						$(this).css("background-color","white");
+						$(this).children('.pick-btn-span').css("color","#396496");
+						$(this).children('.pick-btn-span').text("장바구니 빼기");
+					}  
+				});
+			});
+		}
+	}
+}
 
 function addClickLink(tag, prods){
 	let box = $(tag);
